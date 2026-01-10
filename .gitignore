@@ -1,0 +1,8 @@
+/services/*/node_modules/
+/lamda/node_modules/
+/.vscode/
+.DS_Store
+/services/*/dist/
+/services/*/.env
+/lambda/.env
+/lambda/build/

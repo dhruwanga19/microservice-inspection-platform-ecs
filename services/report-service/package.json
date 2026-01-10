@@ -1,0 +1,20 @@
+{
+  "name": "report-service",
+  "version": "1.0.0",
+  "description": "Report Service microservice for Building Inspection Platform",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "node --watch src/index.js"
+  },
+  "dependencies": {
+    "@aws-sdk/client-dynamodb": "^3.600.0",
+    "@aws-sdk/client-sns": "^3.600.0",
+    "@aws-sdk/lib-dynamodb": "^3.600.0",
+    "cors": "^2.8.5",
+    "express": "^4.19.2"
+  },
+  "engines": {
+    "node": ">=20.0.0"
+  }
+}
