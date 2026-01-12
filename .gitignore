@@ -6,3 +6,8 @@
 /services/*/.env
 /lambda/.env
 /lambda/build/
+/lambda/*.zip
+/terraform/.terraform/
+/terraform/.terraform.*
+/terraform/*.tfstate
+/terraform/*.tfstate.backup

@@ -20,7 +20,7 @@ const docClient = DynamoDBDocumentClient.from(ddbClient);
 const snsClient = new SNSClient({});
 
 // Config from environment
-const TABLE_NAME = process.env.TABLE_NAME || "InspectionsTable";
+const TABLE_NAME = process.env.TABLE_NAME;
 const SNS_TOPIC_ARN = process.env.SNS_TOPIC_ARN;
 
 // Middleware

@@ -5,7 +5,7 @@ set -e
 
 # Configuration
 AWS_REGION="${AWS_REGION:-us-east-1}"
-ENVIRONMENT="${ENVIRONMENT:-prod}"
+ENVIRONMENT="${ENVIRONMENT:-dev}"
 IMAGE_TAG="${IMAGE_TAG:-latest}"
 
 # Colors for output
@@ -49,8 +49,9 @@ for SERVICE in "${SERVICES[@]}"; do
     exit 1
   fi
   
-  # Build the image
+  # Build the image -- targeting linux/amd64 for fargate compatibility
   docker build \
+    --platform linux/amd64 \
     -t "${SERVICE}:${IMAGE_TAG}" \
     -t "${ECR_REPO}:${IMAGE_TAG}" \
     -t "${ECR_REPO}:latest" \

@@ -1,12 +1,11 @@
 #!/bin/bash
-# scripts/deploy.sh
 # Full deployment script for ECS Inspection Platform
 
 set -e
 
 # Configuration
 AWS_REGION="${AWS_REGION:-us-east-1}"
-ENVIRONMENT="${ENVIRONMENT:-prod}"
+ENVIRONMENT="${ENVIRONMENT:-dev}"
 IMAGE_TAG="${IMAGE_TAG:-$(date +%Y%m%d-%H%M%S)}"
 
 # Colors
