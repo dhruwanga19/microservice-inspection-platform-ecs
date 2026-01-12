@@ -145,14 +145,6 @@ Each service has:
 ## 🧹 Cleanup
 
 ```bash
-./scripts/cleanup.sh
+cd terraform
+terraform destroy
 ```
-
-## 📖 Documentation
-
-- [Deployment Guide](https://claude.ai/chat/docs/DEPLOYMENT.md)
-- [Architecture Overview](https://claude.ai/chat/docs/ARCHITECTURE.md)
-
-## 📝 License
-
-MIT
